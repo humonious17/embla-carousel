@@ -1,5 +1,5 @@
 import {
-  Ref,
+  ShallowRef,
   MaybeRefOrGetter,
   toValue,
   watch,
@@ -15,8 +15,8 @@ import EmblaCarousel, {
 import { isWatchSource } from './utils'
 
 export type UseEmblaCarouselType = [
-  Ref<HTMLElement | undefined>,
-  Ref<EmblaCarouselType | undefined>,
+  ShallowRef<HTMLElement | undefined>,
+  ShallowRef<EmblaCarouselType | undefined>,
   EmblaCarouselType
 ]
 
